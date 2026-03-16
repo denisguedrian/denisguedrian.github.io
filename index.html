@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <i class="fa-solid fa-burger navbar-icon">food</i>
+                <ul class="navbar-list">
+                    <li class="navbar-item active"><a href="#home">Início</a></li>
+                    <li class="navbar-item"><a href="#menu">Cardápio</a></li>
+                    <li class="navbar-item"><a href="#testimonials">Avaliações</a></li>
+                </ul>
+
+                <button class="btn-default">
+                    Peça Aqui
+                </button>
+
+                <button class="mobile-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul class="mobile-navbar-list">
+                    <li class="navbar-item"><a href="#home">Início</a></li>
+                    <li class="navbar-item"><a href="#menu">Cardápio</a></li>
+                    <li class="navbar-item"><a href="#testimonials">Avaliações</a></li>
+            </ul>
+        </div>
+
+        <button class="btn-default">
+            Peça Aqui
+        </button>
+    </header>
 </body>
 </html>
