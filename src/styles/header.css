@@ -13,6 +13,7 @@ header {
 .navbar-icon {
     font-size: 24px;
     color: #e9a209;
+    white-space: nowrap;
 }
 
 .navbar-list {
@@ -31,3 +32,43 @@ header {
     color: #e9a209;
     border-bottom: 3px solid #ffe100;
 } 
+
+.mobile-btn {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1170px) {
+    .navbar-list, .navbar .btn-default{
+        display: none;
+    }
+
+    .mobile-btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-navbar-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px;
+    }
+
+    .mobile-navbar-list .navbar-item {
+        list-style: none;
+        text-align: center;
+    }
+}
