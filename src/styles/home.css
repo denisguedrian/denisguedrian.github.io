@@ -2,10 +2,11 @@
     display: flex;
     min-height: calc(100vh - 99px);
     position: relative;
+    overflow: hidden;
 }
 
 .hero__content {
-    width: 35%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 28px;
@@ -51,25 +52,30 @@
 }
 
 .hero__banner {
+    flex: 1.2;
     display: flex;
     align-items: start;
-    justify-content: end;
-    width: 70%;
+    justify-content: center;
+    min-width: 0;
 }
 
 .hero__banner img {
-    margin-top: 85px;
-    max-width: fit-content;
+    position: absolute;
+    left: 50%;
+    right: 0;
+    margin: 85px auto 0; 
+    width: 44%;
+    max-width: 850px;
     z-index: 2;
 }
 
 .hero__shape--banner {
-    background-color: #ffe8b4;
-    width: 50%;
-    height: 100%;
     position: absolute;
     top: 0;
+    left: 50%;
     right: 0;
+    height: 100%;
+    background-color: #ffe8b4;
     border-radius: 30% 30% 0 20%;
     z-index: 1;
 }
