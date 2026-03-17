@@ -5,35 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Landing Page</title>
+    <title>Food</title>
    
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <i class="fa-solid fa-burger navbar-icon"> food</i>
-                <ul class="navbar-list">
-                    <li class="navbar-item active"><a href="#home">Início</a></li>
-                    <li class="navbar-item"><a href="#menu">Cardápio</a></li>
-                    <li class="navbar-item"><a href="#testimonials">Avaliações</a></li>
-                </ul>
+            
+            <div class="navbar__logo">
+                <i class="fa-solid fa-burger"></i>   
+                food
+            </div>
+                   
+            
+            <ul class="navbar__list">
+                <li class="navbar__item navbar__item--active"><a href="#home">Início</a></li>
+                <li class="navbar__item"><a href="#menu">Cardápio</a></li>
+                <li class="navbar__item"><a href="#testimonials">Avaliações</a></li>
+            </ul>
 
-                <button class="btn-default">
-                    Peça Aqui
-                </button>
+            <button class="btn-default">
+                Peça Aqui
+            </button>
 
-                <button class="mobile-btn">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+            <button class="navbar__btn-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
 
-        <div class="mobile-menu">
-            <ul class="mobile-navbar-list">
-                    <li class="navbar-item"><a href="#home">Início</a></li>
-                    <li class="navbar-item"><a href="#menu">Cardápio</a></li>
-                    <li class="navbar-item"><a href="#testimonials">Avaliações</a></li>
+        <div class="navbar__menu-mobile">
+            <ul class="navbar__list-mobile">
+                    <li class="navbar__item"><a href="#home">Início</a></li>
+                    <li class="navbar__item"><a href="#menu">Cardápio</a></li>
+                    <li class="navbar__item"><a href="#testimonials">Avaliações</a></li>
             </ul>
             <button class="btn-default">
                 Peça Aqui
@@ -41,14 +48,38 @@
         </div>
     </header>
     <main>
-        <section id="hero">
-            <h1>O sabor que vai ate você</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus omnis</p>
+        <section id="home" class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    O sabor que vai até 
+                    <span>você</span>
+                </h1>
 
-            <a href="#">Ver cardápio</a>
-            <a href="#">Peça aqui</a>
+                <p class="hero__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus omnis
+                </p>
 
-            <img src="" alt="imagens de comida">
+                <div class="hero__actions">
+                    <a href="#" class="btn-default" role="button">Ver cardápio</a>
+                    <a href="#" class="hero__btn-phone">
+                        <span class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        (12) 34567-8910
+                    </a>
+                    <!-- <a href="#" class="btn-default hero__phone-btn" role="button"><i class="fa-solid fa-phone"></i></a>(12) 34567-8910 -->
+                </div>
+                
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="hero__banner">
+                <img src="src/img/pratos-de-comida-625px.png" alt="pratos de comida">
+            </div>
+            <div class="hero__shape--banner"></div>
         </section>
     </main>
     <script src="src/js/script.js"></script>

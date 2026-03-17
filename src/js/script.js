@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    $('.mobile-btn').on('click',function(){
-        $('.mobile-menu').toggleClass('active');
-        $('.mobile-btn').find('i').toggleClass('fa-bars fa-x');
+    $('.navbar__btn-mobile').on('click',function(){
+        $('.navbar__menu-mobile').toggleClass('active');
+        $('.navbar__btn-mobile').find('i').toggleClass('fa-bars fa-x');
     });
 });
