@@ -56,3 +56,12 @@ section {
 .social-icons a:hover {
     box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.1);
 }
+
+.menu__title {
+    color: #e9a209;
+    font-size: 1.5rem;
+}
+
+.menu__subtitle {
+    font-size: 2.1rem;
+}

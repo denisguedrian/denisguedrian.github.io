@@ -25,7 +25,8 @@ header {
 
 .navbar__item a {
     text-decoration: none;
-    color: #1d1d1dad;
+    color: #1d1d1dea;
+    font-size: 15px;
     font-weight: 600;
 }
 
