@@ -7,16 +7,12 @@ $(document).ready(function() {
     const sections = $('section');
     const navItens = $('.navbar__item');
     let isClicking = false; // ✅ flag
+    let scrollTimeout; // ✅ guarda o timer
 
     navItens.on('click', function() {
         navItens.removeClass('active');
         $(this).addClass('active');
-        
-        // ✅ trava o scroll handler por 1 segundo (tempo da animação)
         isClicking = true;
-        setTimeout(function() {
-            isClicking = false;
-        }, 500);
     });
 
 
@@ -47,6 +43,11 @@ $(document).ready(function() {
             navItens.removeClass('active');
             $(navItens[activeSectionIndex]).addClass('active');
         }
+
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(function() {
+            isClicking = false;
+        }, 150);
 
     });
 
