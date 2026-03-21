@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles/style.css">
-    <link rel="stylesheet" href="src/styles/header.css">
-    <link rel="stylesheet" href="src/styles/home.css">
-    <link rel="stylesheet" href="src/styles/menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="src/js/script.js"></script>
     <title>Food</title>
    
 </head>
@@ -23,7 +22,7 @@
                    
             
             <ul class="navbar__list">
-                <li class="navbar__item navbar__item--active"><a href="#home">Início</a></li>
+                <li class="navbar__item active"><a href="#home">Início</a></li>
                 <li class="navbar__item"><a href="#menu">Cardápio</a></li>
                 <li class="navbar__item"><a href="#testimonials">Avaliações</a></li>
             </ul>
@@ -216,16 +215,74 @@
 
         </section>
         <section id="testimonials" class="depoimentos" >
-            <img src="src/img/chef.png" alt="">
+            <img src="src/img/chef.png" class="img-chef" alt="imagem-do-chef">
             <div class="testimonials_content">
+                
                 <h2 class="menu__title">
-                    Depoimentos
+                    Avaliações
                 </h2>
+               
                 <h3 class="menu__subtitles">
                     O que os clientes falam sobre nós
                 </h3>
+               
+                <div class="feedbacks">
+                    <div class="feedback">
+                        <img src="src/img/avatar.png" alt="feeedback-avatar">
+                        <div class="feedback-content">
+                            <p>
+                                Roberta
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestiae, porro unde necessitatibus magni soluta quae? Sint deserunt optio error dolore labore, voluptatibus est, nemo iusto voluptate magni vitae provident!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <img src="src/img/avatar.png" alt="feeedback-avatar">
+                        <div class="feedback-content">
+                            <p>
+                                Camila
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestiae, porro unde necessitatibus magni soluta quae? Sint deserunt optio error dolore labore, voluptatibus est, nemo iusto voluptate magni vitae provident!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+                <button class="btn-default">
+                    Ver mais avaliações
+                </button>
             </div>
         </section>
+        <footer id="footer" class="footer">
+            <img src="src/img/wave.svg" alt="onda-do-rodape">
+            <div class="footer_itens">
+                <span class="copyright">
+                    &copy; 2026 Denis Guedrian
+                </span>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </footer>
     </main>
     <script src="src/js/script.js"></script>
 </body>

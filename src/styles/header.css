@@ -4,7 +4,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: #fff9ea;
+    background-color: var(--color-primary-1);
 }
 
 .navbar {
@@ -17,7 +17,7 @@ header {
 .navbar__logo {
     font-size: 29px;
     font-weight: 500;
-    color: #e9a209;
+    color: var(--color-primary-6);
     text-transform: uppercase;
 }
 
@@ -29,14 +29,14 @@ header {
 
 .navbar__item a {
     text-decoration: none;
-    color: #1d1d1dea;
+    color: var(--color-neutral-1);
     font-size: 15px;
     font-weight: 600;
 }
 
-.navbar__item--active a {
-    color: #1d1d1d;
-    border-bottom: 3px solid #ffe100;
+.navbar__item.active a {
+    color: var(--color-neutral-1);
+    border-bottom: 3px solid var(--color-primary-4);
 } 
 
 .navbar__btn-mobile {
