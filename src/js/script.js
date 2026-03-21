@@ -16,7 +16,7 @@ $(document).ready(function() {
         isClicking = true;
         setTimeout(function() {
             isClicking = false;
-        }, 1000);
+        }, 500);
     });
 
 
