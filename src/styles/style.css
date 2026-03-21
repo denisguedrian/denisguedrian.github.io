@@ -28,6 +28,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--color-primary-1);
 }
